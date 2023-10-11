@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10A410EB4947EAF701FA0A8B /* Pods_coctailSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2069459DBCB0763AA228CA4B /* Pods_coctailSearchTests.framework */; };
+		8FAC6AB312E1736F3B091125 /* Pods_coctailSearch_coctailSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EF1830F66D8FDC58D55DCE /* Pods_coctailSearch_coctailSearchUITests.framework */; };
+		B0027E3F7E09A469E00CAF11 /* Pods_coctailSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337DDF6F1FF84EF97D7E017 /* Pods_coctailSearch.framework */; };
+		E1E56FF62AD6DEFA002C7389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E56FF52AD6DEFA002C7389 /* AppDelegate.swift */; };
+		E1E56FF82AD6DEFA002C7389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E56FF72AD6DEFA002C7389 /* SceneDelegate.swift */; };
+		E1E56FFA2AD6DEFA002C7389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E56FF92AD6DEFA002C7389 /* ViewController.swift */; };
+		E1E56FFD2AD6DEFA002C7389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E56FFB2AD6DEFA002C7389 /* Main.storyboard */; };
+		E1E56FFF2AD6DEFC002C7389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E56FFE2AD6DEFC002C7389 /* Assets.xcassets */; };
+		E1E570022AD6DEFC002C7389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E570002AD6DEFC002C7389 /* LaunchScreen.storyboard */; };
+		E1E5700D2AD6DEFD002C7389 /* coctailSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5700C2AD6DEFD002C7389 /* coctailSearchTests.swift */; };
+		E1E570172AD6DEFD002C7389 /* coctailSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E570162AD6DEFD002C7389 /* coctailSearchUITests.swift */; };
+		E1E570192AD6DEFD002C7389 /* coctailSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E570182AD6DEFD002C7389 /* coctailSearchUITestsLaunchTests.swift */; };
+		E1E570262AD6E05A002C7389 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E570252AD6E05A002C7389 /* TableViewController.swift */; };
+		E1E570282AD6E0B9002C7389 /* CoctailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E570272AD6E0B8002C7389 /* CoctailTableViewCell.swift */; };
+		E1E5702A2AD6E1A0002C7389 /* recipie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E570292AD6E1A0002C7389 /* recipie.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E570092AD6DEFD002C7389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E56FEA2AD6DEFA002C7389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E56FF12AD6DEFA002C7389;
+			remoteInfo = coctailSearch;
+		};
+		E1E570132AD6DEFD002C7389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E56FEA2AD6DEFA002C7389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E56FF12AD6DEFA002C7389;
+			remoteInfo = coctailSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0114CEAAA7F44CCF137F2D2B /* Pods-coctailSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailSearch.release.xcconfig"; path = "Target Support Files/Pods-coctailSearch/Pods-coctailSearch.release.xcconfig"; sourceTree = "<group>"; };
+		2069459DBCB0763AA228CA4B /* Pods_coctailSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coctailSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EC99EAFBF2B4FA156B04B9 /* Pods-coctailSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailSearch.debug.xcconfig"; path = "Target Support Files/Pods-coctailSearch/Pods-coctailSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		22882006A7678E45E27054B5 /* Pods-coctailSearch-coctailSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailSearch-coctailSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-coctailSearch-coctailSearchUITests/Pods-coctailSearch-coctailSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35A520AAFB44FF69F54ECD2C /* Pods-coctailSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-coctailSearchTests/Pods-coctailSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54EF1830F66D8FDC58D55DCE /* Pods_coctailSearch_coctailSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coctailSearch_coctailSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B12CDFFDD525B0B98642C63 /* Pods-coctailSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailSearchTests.release.xcconfig"; path = "Target Support Files/Pods-coctailSearchTests/Pods-coctailSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8DD62DD83810DE7BE553CC0 /* Pods-coctailSearch-coctailSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coctailSearch-coctailSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-coctailSearch-coctailSearchUITests/Pods-coctailSearch-coctailSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C337DDF6F1FF84EF97D7E017 /* Pods_coctailSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coctailSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E56FF22AD6DEFA002C7389 /* coctailSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coctailSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E56FF52AD6DEFA002C7389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1E56FF72AD6DEFA002C7389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1E56FF92AD6DEFA002C7389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1E56FFC2AD6DEFA002C7389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1E56FFE2AD6DEFC002C7389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E570012AD6DEFC002C7389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1E570032AD6DEFC002C7389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E570082AD6DEFD002C7389 /* coctailSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coctailSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E5700C2AD6DEFD002C7389 /* coctailSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coctailSearchTests.swift; sourceTree = "<group>"; };
+		E1E570122AD6DEFD002C7389 /* coctailSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coctailSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E570162AD6DEFD002C7389 /* coctailSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coctailSearchUITests.swift; sourceTree = "<group>"; };
+		E1E570182AD6DEFD002C7389 /* coctailSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coctailSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1E570252AD6E05A002C7389 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E1E570272AD6E0B8002C7389 /* CoctailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctailTableViewCell.swift; sourceTree = "<group>"; };
+		E1E570292AD6E1A0002C7389 /* recipie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipie.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1E56FEF2AD6DEFA002C7389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0027E3F7E09A469E00CAF11 /* Pods_coctailSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E570052AD6DEFD002C7389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A410EB4947EAF701FA0A8B /* Pods_coctailSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E5700F2AD6DEFD002C7389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAC6AB312E1736F3B091125 /* Pods_coctailSearch_coctailSearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0745E1CE2FD2E3711020A71E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21EC99EAFBF2B4FA156B04B9 /* Pods-coctailSearch.debug.xcconfig */,
+				0114CEAAA7F44CCF137F2D2B /* Pods-coctailSearch.release.xcconfig */,
+				22882006A7678E45E27054B5 /* Pods-coctailSearch-coctailSearchUITests.debug.xcconfig */,
+				A8DD62DD83810DE7BE553CC0 /* Pods-coctailSearch-coctailSearchUITests.release.xcconfig */,
+				35A520AAFB44FF69F54ECD2C /* Pods-coctailSearchTests.debug.xcconfig */,
+				9B12CDFFDD525B0B98642C63 /* Pods-coctailSearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1610A3A5DCCD3672DC7FA4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C337DDF6F1FF84EF97D7E017 /* Pods_coctailSearch.framework */,
+				54EF1830F66D8FDC58D55DCE /* Pods_coctailSearch_coctailSearchUITests.framework */,
+				2069459DBCB0763AA228CA4B /* Pods_coctailSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1E56FE92AD6DEFA002C7389 = {
+			isa = PBXGroup;
+			children = (
+				E1E56FF42AD6DEFA002C7389 /* coctailSearch */,
+				E1E5700B2AD6DEFD002C7389 /* coctailSearchTests */,
+				E1E570152AD6DEFD002C7389 /* coctailSearchUITests */,
+				E1E56FF32AD6DEFA002C7389 /* Products */,
+				0745E1CE2FD2E3711020A71E /* Pods */,
+				1610A3A5DCCD3672DC7FA4FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E56FF32AD6DEFA002C7389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E56FF22AD6DEFA002C7389 /* coctailSearch.app */,
+				E1E570082AD6DEFD002C7389 /* coctailSearchTests.xctest */,
+				E1E570122AD6DEFD002C7389 /* coctailSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1E56FF42AD6DEFA002C7389 /* coctailSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E1E56FF52AD6DEFA002C7389 /* AppDelegate.swift */,
+				E1E56FF72AD6DEFA002C7389 /* SceneDelegate.swift */,
+				E1E56FF92AD6DEFA002C7389 /* ViewController.swift */,
+				E1E570292AD6E1A0002C7389 /* recipie.swift */,
+				E1E570252AD6E05A002C7389 /* TableViewController.swift */,
+				E1E570272AD6E0B8002C7389 /* CoctailTableViewCell.swift */,
+				E1E56FFB2AD6DEFA002C7389 /* Main.storyboard */,
+				E1E56FFE2AD6DEFC002C7389 /* Assets.xcassets */,
+				E1E570002AD6DEFC002C7389 /* LaunchScreen.storyboard */,
+				E1E570032AD6DEFC002C7389 /* Info.plist */,
+			);
+			path = coctailSearch;
+			sourceTree = "<group>";
+		};
+		E1E5700B2AD6DEFD002C7389 /* coctailSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E5700C2AD6DEFD002C7389 /* coctailSearchTests.swift */,
+			);
+			path = coctailSearchTests;
+			sourceTree = "<group>";
+		};
+		E1E570152AD6DEFD002C7389 /* coctailSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E570162AD6DEFD002C7389 /* coctailSearchUITests.swift */,
+				E1E570182AD6DEFD002C7389 /* coctailSearchUITestsLaunchTests.swift */,
+			);
+			path = coctailSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1E56FF12AD6DEFA002C7389 /* coctailSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E5701C2AD6DEFD002C7389 /* Build configuration list for PBXNativeTarget "coctailSearch" */;
+			buildPhases = (
+				1541426ECE4B6F36F424B90C /* [CP] Check Pods Manifest.lock */,
+				E1E56FEE2AD6DEFA002C7389 /* Sources */,
+				E1E56FEF2AD6DEFA002C7389 /* Frameworks */,
+				E1E56FF02AD6DEFA002C7389 /* Resources */,
+				08218715F8EE6EAF612512D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coctailSearch;
+			productName = coctailSearch;
+			productReference = E1E56FF22AD6DEFA002C7389 /* coctailSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1E570072AD6DEFD002C7389 /* coctailSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E5701F2AD6DEFD002C7389 /* Build configuration list for PBXNativeTarget "coctailSearchTests" */;
+			buildPhases = (
+				E800D715EEE9EE398E2AFA0B /* [CP] Check Pods Manifest.lock */,
+				E1E570042AD6DEFD002C7389 /* Sources */,
+				E1E570052AD6DEFD002C7389 /* Frameworks */,
+				E1E570062AD6DEFD002C7389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E5700A2AD6DEFD002C7389 /* PBXTargetDependency */,
+			);
+			name = coctailSearchTests;
+			productName = coctailSearchTests;
+			productReference = E1E570082AD6DEFD002C7389 /* coctailSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1E570112AD6DEFD002C7389 /* coctailSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E570222AD6DEFD002C7389 /* Build configuration list for PBXNativeTarget "coctailSearchUITests" */;
+			buildPhases = (
+				5089B923C3A51E46A80519BC /* [CP] Check Pods Manifest.lock */,
+				E1E5700E2AD6DEFD002C7389 /* Sources */,
+				E1E5700F2AD6DEFD002C7389 /* Frameworks */,
+				E1E570102AD6DEFD002C7389 /* Resources */,
+				54EF102C5A38BDBA9CC3E119 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E570142AD6DEFD002C7389 /* PBXTargetDependency */,
+			);
+			name = coctailSearchUITests;
+			productName = coctailSearchUITests;
+			productReference = E1E570122AD6DEFD002C7389 /* coctailSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1E56FEA2AD6DEFA002C7389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E1E56FF12AD6DEFA002C7389 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E1E570072AD6DEFD002C7389 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E1E56FF12AD6DEFA002C7389;
+					};
+					E1E570112AD6DEFD002C7389 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E1E56FF12AD6DEFA002C7389;
+					};
+				};
+			};
+			buildConfigurationList = E1E56FED2AD6DEFA002C7389 /* Build configuration list for PBXProject "coctailSearch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1E56FE92AD6DEFA002C7389;
+			productRefGroup = E1E56FF32AD6DEFA002C7389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1E56FF12AD6DEFA002C7389 /* coctailSearch */,
+				E1E570072AD6DEFD002C7389 /* coctailSearchTests */,
+				E1E570112AD6DEFD002C7389 /* coctailSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1E56FF02AD6DEFA002C7389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E570022AD6DEFC002C7389 /* LaunchScreen.storyboard in Resources */,
+				E1E56FFF2AD6DEFC002C7389 /* Assets.xcassets in Resources */,
+				E1E56FFD2AD6DEFA002C7389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E570062AD6DEFD002C7389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E570102AD6DEFD002C7389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08218715F8EE6EAF612512D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coctailSearch/Pods-coctailSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coctailSearch/Pods-coctailSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coctailSearch/Pods-coctailSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1541426ECE4B6F36F424B90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coctailSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5089B923C3A51E46A80519BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coctailSearch-coctailSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54EF102C5A38BDBA9CC3E119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coctailSearch-coctailSearchUITests/Pods-coctailSearch-coctailSearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coctailSearch-coctailSearchUITests/Pods-coctailSearch-coctailSearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coctailSearch-coctailSearchUITests/Pods-coctailSearch-coctailSearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E800D715EEE9EE398E2AFA0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coctailSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1E56FEE2AD6DEFA002C7389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E56FFA2AD6DEFA002C7389 /* ViewController.swift in Sources */,
+				E1E56FF62AD6DEFA002C7389 /* AppDelegate.swift in Sources */,
+				E1E570282AD6E0B9002C7389 /* CoctailTableViewCell.swift in Sources */,
+				E1E5702A2AD6E1A0002C7389 /* recipie.swift in Sources */,
+				E1E56FF82AD6DEFA002C7389 /* SceneDelegate.swift in Sources */,
+				E1E570262AD6E05A002C7389 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E570042AD6DEFD002C7389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E5700D2AD6DEFD002C7389 /* coctailSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E5700E2AD6DEFD002C7389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E570192AD6DEFD002C7389 /* coctailSearchUITestsLaunchTests.swift in Sources */,
+				E1E570172AD6DEFD002C7389 /* coctailSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E5700A2AD6DEFD002C7389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E56FF12AD6DEFA002C7389 /* coctailSearch */;
+			targetProxy = E1E570092AD6DEFD002C7389 /* PBXContainerItemProxy */;
+		};
+		E1E570142AD6DEFD002C7389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E56FF12AD6DEFA002C7389 /* coctailSearch */;
+			targetProxy = E1E570132AD6DEFD002C7389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1E56FFB2AD6DEFA002C7389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E56FFC2AD6DEFA002C7389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1E570002AD6DEFC002C7389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E570012AD6DEFC002C7389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1E5701A2AD6DEFD002C7389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1E5701B2AD6DEFD002C7389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1E5701D2AD6DEFD002C7389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21EC99EAFBF2B4FA156B04B9 /* Pods-coctailSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = coctailSearch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.mobydev.coctailSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1E5701E2AD6DEFD002C7389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0114CEAAA7F44CCF137F2D2B /* Pods-coctailSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = coctailSearch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.mobydev.coctailSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1E570202AD6DEFD002C7389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A520AAFB44FF69F54ECD2C /* Pods-coctailSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.mobydev.coctailSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coctailSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/coctailSearch";
+			};
+			name = Debug;
+		};
+		E1E570212AD6DEFD002C7389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B12CDFFDD525B0B98642C63 /* Pods-coctailSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.mobydev.coctailSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coctailSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/coctailSearch";
+			};
+			name = Release;
+		};
+		E1E570232AD6DEFD002C7389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22882006A7678E45E27054B5 /* Pods-coctailSearch-coctailSearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.mobydev.coctailSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coctailSearch;
+			};
+			name = Debug;
+		};
+		E1E570242AD6DEFD002C7389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DD62DD83810DE7BE553CC0 /* Pods-coctailSearch-coctailSearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.mobydev.coctailSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coctailSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1E56FED2AD6DEFA002C7389 /* Build configuration list for PBXProject "coctailSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E5701A2AD6DEFD002C7389 /* Debug */,
+				E1E5701B2AD6DEFD002C7389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E5701C2AD6DEFD002C7389 /* Build configuration list for PBXNativeTarget "coctailSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E5701D2AD6DEFD002C7389 /* Debug */,
+				E1E5701E2AD6DEFD002C7389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E5701F2AD6DEFD002C7389 /* Build configuration list for PBXNativeTarget "coctailSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E570202AD6DEFD002C7389 /* Debug */,
+				E1E570212AD6DEFD002C7389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E570222AD6DEFD002C7389 /* Build configuration list for PBXNativeTarget "coctailSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E570232AD6DEFD002C7389 /* Debug */,
+				E1E570242AD6DEFD002C7389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1E56FEA2AD6DEFA002C7389 /* Project object */;
+}
